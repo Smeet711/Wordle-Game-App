@@ -8,7 +8,6 @@ function Keyboard() {
   const keys3 = ["Z", "X", "C", "V", "B", "N", "M"];
 
   const {
-    board,
     disabledLetters,
     currAttempt,
     gameOver,
@@ -28,6 +27,7 @@ function Keyboard() {
         keys1.forEach((key) => {
           if (event.key.toLowerCase() === key.toLowerCase()) {
             onSelectLetter(key);
+            console.log(onSelectLetter(key));
           }
         });
         keys2.forEach((key) => {
@@ -44,6 +44,8 @@ function Keyboard() {
     },
     [currAttempt]
   );
+
+
   useEffect(() => {
     document.addEventListener("keydown", handleKeyboard);
 

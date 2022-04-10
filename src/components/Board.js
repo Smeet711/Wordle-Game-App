@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
-import { AppContext } from "../App";
+
+// import { AppContext } from "../App";
 import Letter from "./Letter";
 
+
 function Board() {
+  
   return (
     <div className="board">
       {" "}
